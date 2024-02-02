@@ -8,20 +8,27 @@ const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
   return (
-    <main className=" bg-white relative">
-      <div className="w-full sticky top-0 backdrop-filter backdrop-blur-md bg-opacity-100">
+    <main className=" bg-white relative h-screen max-h-screen overflow-hidden scroll-smooth container">
+      <div className="w-full sticky top-0 backdrop-filter backdrop-blur-md bg-opacity-100 z-50">
         <Navbar />
       </div>
-      {/* <Sidebar /> */}
 
-      <div className="container mx-auto">
-        <Header />
-        <NewsCard />
-        <NewsCard />
-        <NewsCard />
-        <NewsCard />
-        <NewsCard />
-        <NewsCard />
+      <div className=" container mx-auto relative flex h-full">
+        <div
+          className={`w-1/2 absolute md:static backdrop-filter backdrop-blur-md bg-opacity-100 h-screen mt-7 z-50 -left-full md:left-0`}
+        >
+          <Sidebar />
+        </div>
+
+        <div className=" z-0 max-w-full overflow-x-hidden max-h-full overflow-y-auto relative snap-mandatory snap-y scroll-smooth duration-300">
+          <Header />
+          <NewsCard />
+          <NewsCard />
+          <NewsCard />
+          <NewsCard />
+          <NewsCard />
+          <NewsCard />
+        </div>
       </div>
     </main>
   );

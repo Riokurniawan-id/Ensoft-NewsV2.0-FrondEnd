@@ -1,16 +1,23 @@
+import Profile from "@/asset-dummy/logo-strapi.jpg";
+import Image from "next/image";
+
 const Sidebar = () => {
   return (
-    <div class="flex h-screen flex-col justify-between border-e bg-white">
-      <div class="px-4 py-6">
-        <span class="grid h-10 w-32 place-content-center rounded-lg bg-gray-100 text-xs text-gray-600">
-          Logo
+    <div class="flex h-screen flex-col justify-between border-e bg-white w-full">
+      <div class="px-12 py-6">
+        <span class="grid h-24 w-24 place-content-center rounded-lg bg-gray-100 text-xs text-gray-600">
+          <Image
+            src={Profile}
+            alt="Picture of the author"
+            class="h-24 w-24 rounded-lg"
+          />
         </span>
 
         <ul class="mt-6 space-y-1">
           <li>
             <a
               href=""
-              class="block rounded-lg bg-gray-100 px-4 py-2 text-sm font-medium text-gray-700"
+              class="block rounded-lg bg-gray-100 px-4 py-2 text-md font-medium text-gray-700"
             >
               General
             </a>
@@ -19,7 +26,7 @@ const Sidebar = () => {
           <li>
             <details class="group [&_summary::-webkit-details-marker]:hidden">
               <summary class="flex cursor-pointer items-center justify-between rounded-lg px-4 py-2 text-gray-500 hover:bg-gray-100 hover:text-gray-700">
-                <span class="text-sm font-medium"> Teams </span>
+                <span class="text-md font-medium"> Teams </span>
 
                 <span class="shrink-0 transition duration-300 group-open:-rotate-180">
                   <svg
@@ -62,7 +69,7 @@ const Sidebar = () => {
           <li>
             <a
               href=""
-              class="block rounded-lg px-4 py-2 text-sm font-medium text-gray-500 hover:bg-gray-100 hover:text-gray-700"
+              class="block rounded-lg px-4 py-2 text-md font-medium text-gray-500 hover:bg-gray-100 hover:text-gray-700"
             >
               Billing
             </a>
@@ -71,7 +78,7 @@ const Sidebar = () => {
           <li>
             <a
               href=""
-              class="block rounded-lg px-4 py-2 text-sm font-medium text-gray-500 hover:bg-gray-100 hover:text-gray-700"
+              class="block rounded-lg px-4 py-2 text-md font-medium text-gray-500 hover:bg-gray-100 hover:text-gray-700"
             >
               Invoices
             </a>
@@ -80,7 +87,7 @@ const Sidebar = () => {
           <li>
             <details class="group [&_summary::-webkit-details-marker]:hidden">
               <summary class="flex cursor-pointer items-center justify-between rounded-lg px-4 py-2 text-gray-500 hover:bg-gray-100 hover:text-gray-700">
-                <span class="text-sm font-medium"> Account </span>
+                <span class="text-md font-medium"> Account </span>
 
                 <span class="shrink-0 transition duration-300 group-open:-rotate-180">
                   <svg

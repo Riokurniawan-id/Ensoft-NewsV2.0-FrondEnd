@@ -1,17 +1,19 @@
 import Profile from "@/asset-dummy/logo-strapi.jpg";
 import Image from "next/image";
+import Hamburger_menu from "@/asset/hamburger_menu.svg";
 
 const Navbar = () => {
   return (
     <div className="container mx-auto py-3 ">
       <div class="flex gap-4 justify-center md:justify-between mx-auto">
-        <div className="">
+        <div className="flex text-2xl font-bold text-gray-900 sm:text-3xl">
+          <h1>Ensoft.news</h1>
           <a href="#" class="shrink-0">
             <span class="sr-only">Profile</span>
             <Image
-              src={Profile}
+              src={Hamburger_menu}
               alt="Picture of the author"
-              class="h-10 w-10 rounded-full object-cover"
+              class="h-5 w-10 object-cover fill-slate-400"
             />
           </a>
           <span
