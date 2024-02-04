@@ -4,23 +4,25 @@ import Hamburger_menu from "@/asset/hamburger_menu.svg";
 
 const Navbar = () => {
   return (
-    <div className="container mx-auto py-3 ">
-      <div class="flex gap-4 justify-center md:justify-between mx-auto">
-        <div className="flex text-2xl font-bold text-gray-900 sm:text-3xl">
-          <h1>Ensoft.news</h1>
-          <a href="#" class="shrink-0">
-            <span class="sr-only">Profile</span>
-            <Image
-              src={Hamburger_menu}
-              alt="Picture of the author"
-              class="h-5 w-10 object-cover fill-slate-400"
+    <div className="container mx-auto py-3 border-b">
+      <div class="flex gap-4 justify-center md:justify-end mx-auto">
+        <a href="#" class="shrink-0 bg-white p-2.5 text-gray-600 md:hidden">
+          <span class="sr-only">Profile</span>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            strokeWidth={1.5}
+            stroke="currentColor"
+            className="w-6 h-6"
+          >
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
             />
-          </a>
-          <span
-            aria-hidden="true"
-            class="h-6 w-px rounded-full bg-gray-200"
-          ></span>
-        </div>
+          </svg>
+        </a>
         <div className="flex gap-4">
           <div class="relative">
             <label class="sr-only" for="search">
@@ -30,7 +32,7 @@ const Navbar = () => {
 
             <input
               class="h-10 w-full rounded-full border-none bg-white pe-10 ps-4
-            text-sm shadow-sm sm:w-96 text-black peer focus:scale-150 focus:shadow-md focus:translate-y-9 focus:rounded-md md:focus:scale-100 md:focus:translate-y-0 md:focus:rounded-full transition-all focus:outline-none focus:border-sky-500 focus:ring-1 focus:ring-sky-500"
+            text-sm shadow-sm sm:w-96 text-black peer focus:scale-150 focus:shadow-md focus:translate-y-9 focus:rounded-md md:focus:scale-100 md:focus:translate-y-0 md:focus:rounded-full transition-all focus:outline-none focus:border-sky-500 focus:ring-1 focus:ring-sky-500 "
               id="search"
               type="search"
               placeholder=" 🔎 Search News..."

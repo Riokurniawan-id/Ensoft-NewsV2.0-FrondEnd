@@ -9,13 +9,13 @@ const inter = Inter({ subsets: ["latin"] });
 export default function Home() {
   return (
     <main className=" bg-white relative h-screen max-h-screen overflow-hidden scroll-smooth container">
-      <div className="w-full sticky top-0 backdrop-filter backdrop-blur-md bg-opacity-100 z-50">
+      <div className="w-full sticky top-0 backdrop-filter backdrop-blur-md bg-opacity-100 z-50 ">
         <Navbar />
       </div>
 
-      <div className=" container mx-auto relative flex h-full">
+      <div className=" md:container mx-auto relative flex h-full">
         <div
-          className={`w-1/2 absolute md:static backdrop-filter backdrop-blur-md bg-opacity-100 h-screen mt-7 z-50 -left-full md:left-0`}
+          className={`w-1/2 absolute md:static backdrop-filter backdrop-blur-md bg-opacity-100 h-screen z-50 -left-full md:left-0`}
         >
           <Sidebar />
         </div>
