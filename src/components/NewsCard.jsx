@@ -1,22 +1,22 @@
 const NewsCard = () => {
   return (
     <div className="relative h-full snap-center">
-      <article class=" p-2 md:p-12 relative h-full">
+      <article className=" p-2 md:p-12 relative h-full">
         <img
           alt="Lava"
           src="https://images.unsplash.com/photo-1631451095765-2c91616fc9e6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80"
-          class=" m-auto h-2/6 w-full 
+          className=" m-auto h-2/6 w-full 
         md:h-2/6 object-cover rounded-xl shadow-xl"
         />
 
-        <div class="py-4">
+        <div className="py-4">
           <a href="#">
-            <h3 class="text-lg font-medium text-gray-900">
+            <h3 className="text-lg font-medium text-gray-900">
               Finding the Journey to Mordor
             </h3>
           </a>
           <ul className="flex text-sm gap-5 pl-3 mt-2">
-            <span class=" rounded-full bg-purple-100 px-4 py-1 text-sm text-purple-700 flex items-center">
+            <span className=" rounded-full bg-purple-100 px-4 py-1 text-sm text-purple-700 flex items-center">
               Kategori
             </span>
 
@@ -48,7 +48,7 @@ const NewsCard = () => {
             </a>
           </ul>
 
-          <p class="mt-2 text-sm/relaxed text-gray-500">
+          <p className="mt-2 text-sm/relaxed text-gray-500">
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae
             dolores, possimus pariatur animi temporibus nesciunt praesentium
             dolore sed nulla ipsum eveniet corporis quidem, mollitia itaque
