@@ -1,4 +1,4 @@
-import Header from "@/components/header";
+import Header from "@/components/Header";
 import NewsCard from "@/components/NewsCard";
 import Navbar from "@/components/Navbar";
 import Sidebar from "@/components/Sidebar";

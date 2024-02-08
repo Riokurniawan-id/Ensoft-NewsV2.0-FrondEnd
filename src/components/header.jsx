@@ -1,7 +1,7 @@
 import Profile from "@/asset-dummy/logo-strapi.jpg";
 import Image from "next/image";
 
-const Header = () => {
+function Header() {
   return (
     <header className="bg-gray-50 snap-start">
       <div className="mx-auto max-w-screen-xl px-4 pb-8 sm:pb-6 lg:px-8">
@@ -17,6 +17,6 @@ const Header = () => {
       </div>
     </header>
   );
-};
+}
 
 export default Header;

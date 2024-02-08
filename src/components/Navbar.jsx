@@ -1,9 +1,9 @@
-const Navbar = () => {
+function Navbar() {
   return (
     <div className="md:container mx-auto py-3 border-b px-4 md:px-0">
       <div className="flex gap-4 justify-between md:justify-end mx-auto">
         <a href="#" className="shrink-0 bg-white p-2.5 text-gray-600 md:hidden">
-          className<span className="sr-only">Profile</span>
+          <span className="sr-only">Profile</span>
           <svg
             xmlns="http://www.w3.org/2000/svg"
             fill="none"
@@ -80,6 +80,6 @@ const Navbar = () => {
       </div>
     </div>
   );
-};
+}
 
 export default Navbar;

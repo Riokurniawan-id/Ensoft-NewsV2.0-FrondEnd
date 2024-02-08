@@ -1,4 +1,4 @@
-const NewsCard = () => {
+function NewsCard() {
   return (
     <div className="relative h-full snap-center">
       <article className=" p-2 md:p-12 relative h-full">
@@ -59,6 +59,6 @@ const NewsCard = () => {
       </article>
     </div>
   );
-};
+}
 
 export default NewsCard;

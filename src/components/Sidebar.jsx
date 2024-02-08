@@ -1,7 +1,7 @@
 import Profile from "@/asset-dummy/logo-strapi.jpg";
 import Image from "next/image";
 
-const Sidebar = () => {
+function Sidebar() {
   return (
     <div className="flex h-screen flex-col justify-between border-e bg-white w-full">
       <div className="px-12 py-6">
@@ -141,6 +141,6 @@ const Sidebar = () => {
       </div>
     </div>
   );
-};
+}
 
 export default Sidebar;
