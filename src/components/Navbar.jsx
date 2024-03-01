@@ -19,7 +19,7 @@ function Navbar() {
             />
           </svg>
         </a>
-        <div className="flex gap-4">
+        <div className="flex gap-4 px-2">
           <div className="relative">
             <label className="sr-only" htmlFor="search">
               {" "}
@@ -58,7 +58,7 @@ function Navbar() {
 
           <a
             href="#"
-            className=" shrink-0 rounded-full bg-white p-2.5 text-gray-600 shadow-sm hover:text-gray-700"
+            className=" shrink-0 rounded-full bg-white p-2.5 text-gray-600 shadow-sm hover:text-gray-700 hover:shadow-lg"
           >
             <span className="sr-only">Notifications</span>
             <svg
@@ -75,6 +75,51 @@ function Navbar() {
                 d="M15 17h5l-1.405-1.405A2.032 2.032 0 0118 14.158V11a6.002 6.002 0 00-4-5.659V5a2 2 0 10-4 0v.341C7.67 6.165 6 8.388 6 11v3.159c0 .538-.214 1.055-.595 1.436L4 17h5m6 0v1a3 3 0 11-6 0v-1m6 0H9"
               />
             </svg>
+          </a>
+
+          <a
+            href=""
+            className="shrink-0 rounded-full bg-white p-2.5 text-gray-600 shadow-sm hover:text-gray-700 hover:shadow-lg"
+          >
+            <span className="sr-only">mode</span>
+            {/* matahari */}
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              className="h-5 w-5"
+            >
+              <circle cx="12" cy="12" r="5"></circle>
+              <line x1="12" y1="1" x2="12" y2="3"></line>
+              <line x1="12" y1="21" x2="12" y2="23"></line>
+              <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+              <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+              <line x1="1" y1="12" x2="3" y2="12"></line>
+              <line x1="21" y1="12" x2="23" y2="12"></line>
+              <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+              <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+            </svg>
+            {/* matahari */}
+
+            {/* bulan */}
+            {/* <svg
+              xmlns="http://www.w3.org/2000/svg"
+              
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              className="h-5 w-5"
+            >
+              <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+            </svg> */}
+            {/* bulan */}
           </a>
         </div>
       </div>

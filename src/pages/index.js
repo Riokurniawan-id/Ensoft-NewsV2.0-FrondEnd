@@ -1,9 +1,13 @@
 import { Inter } from "next/font/google";
 import Head from "next/head";
-import Logo from "@/asset-dummy/logo-strapi.jpg";
 import LayoutIndex from "@/layout/LayoutIndex";
 
-const inter = Inter({ subsets: ["latin"] });
+// component
+import Header from "@/components/Header";
+import NewsCard from "@/components/NewsCard";
+import Dummy from "@/components/dummy";
+
+// const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
   return (
@@ -12,7 +16,13 @@ export default function Home() {
         <title>Ensoft</title>
         <link rel="icon" href="/logo-strapi.jpg" />
       </Head>
-      <LayoutIndex />
+      <LayoutIndex>
+        <Header />
+        <NewsCard />
+        <NewsCard />
+        <NewsCard />
+        <NewsCard />
+      </LayoutIndex>
     </>
   );
 }

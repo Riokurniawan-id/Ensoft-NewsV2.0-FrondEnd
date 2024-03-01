@@ -1,10 +1,27 @@
+import { useState, useEffect } from "react";
+import { useRouter } from "next/router";
+import Link from "next/link";
+
 import Profile from "@/asset-dummy/logo-strapi.jpg";
 import Image from "next/image";
 
 function Sidebar() {
+  const router = useRouter();
+  const [activePage, setActivePage] = useState("");
+
+  // Tentukan halaman aktif saat pertama kali komponen dimount
+  useEffect(() => {
+    setActivePage(router.pathname);
+  }, []);
+
+  // Perbarui halaman aktif setiap kali rute berubah
+  useEffect(() => {
+    setActivePage(router.pathname);
+  }, [router.pathname]);
+
   return (
     <div className="flex h-screen flex-col justify-between border-e bg-white w-full">
-      <div className="px-12 py-6">
+      <div className="px-1 py-6">
         <span className="grid h-24 w-24 place-content-center rounded-lg bg-gray-100 text-xs text-gray-600">
           <Image
             src={Profile}
@@ -15,18 +32,22 @@ function Sidebar() {
 
         <ul className="mt-6 space-y-1">
           <li>
-            <a
-              href=""
-              className="block rounded-lg bg-gray-100 px-4 py-2 text-md font-medium text-gray-700"
-            >
-              Berita
-            </a>
+            <Link href="/">
+              <p
+                href=""
+                className={`block rounded-lg hover:bg-gray-100 px-4 py-2 text-md font-medium text-gray-700 ${
+                  activePage === "/" ? "bg-gray-100" : ""
+                }`}
+              >
+                Berita
+              </p>
+            </Link>
           </li>
 
           <li>
             <details className="group [&_summary::-webkit-details-marker]:hidden">
               <summary className="flex cursor-pointer items-center justify-between rounded-lg px-4 py-2 text-gray-500 hover:bg-gray-100 hover:text-gray-700">
-                <span className="text-md font-medium"> Teams </span>
+                <span className="text-md font-medium"> Kategori </span>
 
                 <span className="shrink-0 transition duration-300 group-open:-rotate-180">
                   <svg
@@ -50,7 +71,7 @@ function Sidebar() {
                     href=""
                     className="block rounded-lg px-4 py-2 text-sm font-medium text-gray-500 hover:bg-gray-100 hover:text-gray-700"
                   >
-                    Banned Users
+                    Teknologi
                   </a>
                 </li>
 
@@ -59,7 +80,7 @@ function Sidebar() {
                     href=""
                     className="block rounded-lg px-4 py-2 text-sm font-medium text-gray-500 hover:bg-gray-100 hover:text-gray-700"
                   >
-                    Calendar
+                    Finance
                   </a>
                 </li>
               </ul>
@@ -67,21 +88,29 @@ function Sidebar() {
           </li>
 
           <li>
-            <a
-              href=""
-              className="block rounded-lg px-4 py-2 text-md font-medium text-gray-500 hover:bg-gray-100 hover:text-gray-700"
-            >
-              Billing
-            </a>
+            <Link href="/tentang-kami">
+              <p
+                className={`block rounded-lg px-4 py-2 text-md font-medium text-gray-500 hover:bg-gray-100 hover:text-gray-700 ${
+                  activePage == "/tentang-kami" ? "bg-gray-100" : ""
+                }`}
+              >
+                Tentang Kami
+              </p>
+            </Link>
           </li>
 
           <li>
-            <a
-              href=""
-              className="block rounded-lg px-4 py-2 text-md font-medium text-gray-500 hover:bg-gray-100 hover:text-gray-700"
-            >
-              Invoices
-            </a>
+            <Link href="donasi-ke-kami">
+              <p
+                className={`block rounded-lg px-4 py-2 text-md font-medium text-gray-500 hover:bg-gray-100 hover:text-sky-600 ${
+                  activePage == "/donasi-ke-kami"
+                    ? "bg-gray-100 text-sky-600 "
+                    : ""
+                }`}
+              >
+                Donasi Ke Kami
+              </p>
+            </Link>
           </li>
 
           <li>
@@ -128,7 +157,7 @@ function Sidebar() {
                   <form action="/logout">
                     <button
                       type="submit"
-                      className="w-full rounded-lg px-4 py-2 text-sm font-medium text-gray-500 [text-align:_inherit] hover:bg-gray-100 hover:text-gray-700"
+                      className="w-full rounded-lg px-4 py-2 text-sm font-medium text-gray-500 [text-align:_inherit] hover:bg-gray-100 hover:text-red-500"
                     >
                       Logout
                     </button>
