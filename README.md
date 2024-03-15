@@ -1,36 +1,35 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Website-Ensoft.id (Versi 2.0) - Akan Segera Hadir!
 
-## Getting Started
+**Perhatian:** Versi 2.0 dari Website-Ensoft.id sedang dalam pengembangan aktif! Kami sedang mempersiapkan pembaruan yang menarik dan meningkatkan pengalaman pengguna secara signifikan.
 
-First, run the development server:
+![Status Pengembangan](https://img.shields.io/badge/Status-Pengembangan-yellow.svg)
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## Penyegaran Utama
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- **Desain Baru yang Menarik:** Kami sedang menghadirkan desain baru yang segar dan menarik untuk meningkatkan estetika dan interaktivitas situs.
+- **Peningkatan Responsif:** Memperbaiki responsivitas untuk memastikan situs dapat diakses dengan baik di berbagai perangkat.
+- **Peningkatan Kinerja:** Optimalisasi kinerja untuk mempercepat waktu pemuatan dan meningkatkan pengalaman pengguna.
+- **Penambahan Fitur Baru:** Kami juga menambahkan fitur baru yang akan membuat pengalaman pengguna lebih kaya dan lengkap.
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+## Fitur yang Akan Datang
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+- **Tema Gelap:** Kami sedang menambahkan mode tema gelap untuk memberikan pilihan visual yang lebih luas kepada pengguna.
+- **Peningkatan Navigasi:** Peningkatan navigasi untuk memudahkan pengguna dalam menemukan informasi yang relevan.
+- **Integrasi Media Sosial:** Kami akan menyediakan integrasi dengan platform media sosial untuk memperluas jangkauan konten kami.
 
-## Learn More
+## Kontribusi
 
-To learn more about Next.js, take a look at the following resources:
+Kami selalu menghargai kontribusi dari komunitas! Jika Anda ingin berkontribusi pada pengembangan versi 2.0, Silakan hubungi saya dengan kontak dibawah
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Kontak
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+Untuk pertanyaan atau informasi lebih lanjut, jangan ragu untuk menghubungi saya melalui:
 
-## Deploy on Vercel
+- Email: [riokurniawan12378@gmail.com](mailto:riokurniawan12378@gmail.com)
+- Instagram: [@Riokurniawan.id](https://instagram.com/riokurniawan_id)
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Kami sangat bersemangat untuk berbagi versi 2.0 dari Website-Ensoft.id dengan Anda! Terima kasih atas dukungan Anda.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+---
+
+© [Rio Kurniawan] - [2024] Keep Innovating! 🚀
